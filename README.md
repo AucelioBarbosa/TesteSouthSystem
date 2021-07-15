@@ -1,10 +1,9 @@
-# TesteSouthSystem
 <h1 align = "center">
-<a href="https://github.com/AucelioBarbosa/TesteSouthSystem"> Teste automatizado Mobile</a>
-</h>
+<a href="https://github.com/AucelioBarbosa/TesteSouthSystem"> Teste Automatizado Mobile</a>
+</h1>
 
 <h2 align = "center">
-<p > Teste automatizado de um aplicativo mobile validando o fluxo de funcionalidades e usabildade</p>
+<p > Teste automatizado de aplicativo mobile validando as funcionalidades e usabildade</p>
 </h2>
 
 Esse teste consite em avaliar um aplicativo em desenvolvimento, para isso foi criado um cenário de teste funcionais onde é avaliados se suas
@@ -48,6 +47,23 @@ Então é mostrado a mensagem vai toast "Falha ao criar pagamento".<br>
 Dado que o usuário queira efetuar o logoff;<br>
 E clicar no botão de logout;<br>
 Então o usuário retornará a activity de login.<br>
+  
+  
+<h2 align = "center">
+  <p> Pré-requisitos</p>
+</h2>
+1 - IDE intelliJ;<br>
+2 - AVDManage;<br>
+3 - Appium configurado em seu computador e instalado;<br>
+4 - Fazer o fork do apk do <a href="https://github.com/rh-southsystem/desafio-appium-south"> desafio;</a><br>
+5 - bixar um emulado com a versão 9.0;<br>
+6 - conferir se o pom.xml configurado corretamente;<br>
+7 - versão da JDK 1.8;<br>
+<p>
+<h2 align = "center">  
+  <p>Library Utilizadas</p>
+</h2>
 
-
+* JUnit 4.12;<br>
+* Appium Driver;<br>
 
