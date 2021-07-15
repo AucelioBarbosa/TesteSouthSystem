@@ -56,9 +56,9 @@ Então o usuário retornará a activity de login.<br>
 2 - AVDManage;<br>
 3 - Appium configurado em seu computador e instalado;<br>
 4 - Fazer o fork do apk do <a href="https://github.com/rh-southsystem/desafio-appium-south"> desafio;</a><br>
-5 - bixar um emulado com a versão 9.0;<br>
-6 - conferir se o pom.xml configurado corretamente;<br>
-7 - versão da JDK 1.8;<br>
+5 - Baixar um emulado com a versão 9.0;<br>
+6 - Conferir se o pom.xml está configurado corretamente;<br>
+7 - Versão da JDK 1.8;<br>
 <p>
 <h2 align = "center">  
   <p>Library Utilizadas</p>
