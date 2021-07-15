@@ -3,11 +3,11 @@
 </h1>
 
 <h2 align = "center">
-<p > Teste automatizado de aplicativo mobile validando as funcionalidades e usabildade</p>
+<p > Teste automatizado de aplicativo mobile validando as funcionalidades e usabilidade</p>
 </h2>
 
-Esse teste consite em avaliar um aplicativo em desenvolvimento, para isso foi criado um cenário de teste funcionais onde é avaliados se suas
-funcionalidade estão em perfeito estado de funcionameto.
+Esse teste consiste em avaliar um aplicativo em desenvolvimento, para isso foi criado um cenário de testes funcionais onde é avaliados se suas
+funcionalidades estar em perfeito estado de funcionamento.
 
 Dado que um usuário baixe o app em seu dispositivo; <br>
 E tente efetuar o login sem está previamente cadastrado; <br>
