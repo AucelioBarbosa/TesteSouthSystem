@@ -10,8 +10,8 @@ Esse teste consiste em avaliar um aplicativo em desenvolvimento, para isso foi c
 funcionalidades estar em perfeito estado de funcionamento.
 
 Dado que um usuário baixe o app em seu dispositivo; <br>
-E tente efetuar o login sem está previamente cadastrado; <br>
-E Quando tentar efetuar o o login sem o cadastro previo; <br>
+E tente efetuar o login sem estar previamente cadastrado; <br>
+Quando tentar efetuar o o login sem o cadastro previo; <br>
 Então é mostrado a mensagem "Usuário ou senha inválidos".<br>
 <p>
 Dado que um usuário não tenha um cadastro relalizado é permitido efetuar o cadastro pelo app; <br>
@@ -65,5 +65,5 @@ Então o usuário retornará a activity de login.<br>
 </h2>
 
 * JUnit 4.12;<br>
-* Appium Driver;<br>
+* Appium Client 7.5.1;<br>
 
