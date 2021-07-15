@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.Cadastro;
-import pages.Compar;
+import pages.Comprar;
 import pages.Login;
 import pages.Pagamento;
 
@@ -17,7 +17,7 @@ public class LojaAlura {
     private AndroidDriver driver;
     private Login login;
     private Cadastro cadastro;
-    private Compar compar;
+    private Comprar comprar;
     private Pagamento pagamento;
 
     @Before
@@ -36,7 +36,7 @@ public class LojaAlura {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         login = new Login(driver);
         cadastro = new Cadastro(driver);
-        compar = new Compar(driver);
+        comprar = new Comprar(driver);
         pagamento = new Pagamento(driver);
     }
 
@@ -47,7 +47,7 @@ public class LojaAlura {
         cadastro.validaCampoSenha();
         cadastro.cadastar();
         login.login();
-        compar.selecaoProduto();
+        comprar.selecaoProduto();
         pagamento.efetuarPagamento();
         login.logoff();
     }

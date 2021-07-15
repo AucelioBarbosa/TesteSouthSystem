@@ -5,9 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class Pagamento {
 
@@ -18,14 +16,24 @@ public class Pagamento {
     }
 
     public void efetuarPagamento(){
-        MobileElement el11 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.EditText");
-        el11.sendKeys("1234123412341234");
-        MobileElement el12 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.EditText");
-        el12.sendKeys("0212");
-        MobileElement el13 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.FrameLayout/android.widget.EditText");
-        el13.sendKeys("123");
-        MobileElement el14 = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/pagamento_botao_confirma_pagamento");
-        el14.click();
+        MobileElement numCad = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/" +
+                "android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/" +
+                "android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[1]/" +
+                "android.widget.FrameLayout/android.widget.EditText");
+        numCad.sendKeys("1234123412341234");
+        MobileElement valcad = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/" +
+                "android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/" +
+                "android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/" +
+                "android.widget.FrameLayout/android.widget.EditText");
+        valcad.sendKeys("0212");
+        MobileElement cvc = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/" +
+                "android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/" +
+                "android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.FrameLayout/android.widget.EditText");
+        cvc.sendKeys("123");
+        MobileElement btnPg = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/" +
+                "pagamento_botao_confirma_pagamento");
+        btnPg.click();
+        
         validaToast();
     }
 

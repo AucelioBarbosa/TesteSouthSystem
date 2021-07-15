@@ -27,17 +27,17 @@ public class Login {
 
     }
     public void login(){
-        MobileElement el6 = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/input_usuario");
-        el6.sendKeys("jose vitor");
-        MobileElement el7 = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/input_senha");
-        el7.sendKeys("12345");
-        MobileElement el8 = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/login_botao_logar");
-        el8.click();
+        MobileElement txLogin = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/input_usuario");
+        txLogin.sendKeys("jose vitor");
+        MobileElement senha = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/input_senha");
+        senha.sendKeys("12345");
+        MobileElement btnLogar = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/login_botao_logar");
+        btnLogar.click();
     }
     public void logoff(){
 
-        MobileElement el15 = (MobileElement) driver.findElementByAccessibilityId("Deslogar");
-        el15.click();
+        MobileElement btnLogOff = (MobileElement) driver.findElementByAccessibilityId("Deslogar");
+        btnLogOff.click();
     }
 
     public void validaMsg(){

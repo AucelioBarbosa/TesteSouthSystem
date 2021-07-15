@@ -8,8 +8,8 @@ public class Cadastro {
 
     private AndroidDriver driver;
 
-    public Cadastro(AndroidDriver android) {
-        this.driver = android;
+    public Cadastro(AndroidDriver driver) {
+        this.driver = driver;
     }
 
     public void cadastar(){
@@ -30,13 +30,11 @@ public class Cadastro {
         senhaval.sendKeys("10345");
         MobileElement ConfSenha = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/input_confirmar_senha");
         ConfSenha.sendKeys("12345");
-        MobileElement btnCadastrar = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/cadastro_usuario_botao_cadastrar");
+        MobileElement btnCadastrar = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/" +
+                "cadastro_usuario_botao_cadastrar");
         btnCadastrar.click();
 
         validaMsg();
-
-//        MobileElement btnCad = (MobileElement) driver.findElementById("br.com.alura.aluraesporte:id/cadastro_usuario_botao_cadastrar");
-//        btnCad.click();
     }
 
     public void validaMsg(){
